@@ -42,7 +42,7 @@ $ python3 decryption.py "axo6VEI3Tn2ekTeLxA8KBBmH7CA=" "GuCyTQ=="
 When finish the decryption, it will print log as ```****** Found it!!!!! ****** The password is  1984``` and save the password in result.txt file if decrypt successfully，Or it will show failure log.   
 
 # 中文说明(README in Chinese version)
-对苹果iPhone访问限制密码的破解的Python工具。
+对苹果iPhone访问限制密码进行破解的Python工具。
 
 ## 楔子
 某天我最好的朋友问我有没有办法可以破解他的访问限制密码，因为他忘记自己设置的是多少了。我就在互联网上搜索破解方法，找到了这个网站[Recover iOS7+ Restrictions Passcodes](http://ios7hash.derson.us/)可以破解出IOS7，8和9的访问限制密码。  
