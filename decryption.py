@@ -14,7 +14,6 @@ def findPasswd(hashStr, saltStr):
     "Find the password of the Parental Contol"
     signal.signal(signal.SIGTERM, signalHandler)
     signal.signal(signal.SIGINT, signalHandler)
-    signal.signal(signal.SIGQUIT, signalHandler)
     if os.path.exists("result.txt"):
         os.remove("result.txt")
 
@@ -42,15 +41,15 @@ def getHash(key, salt):
     return Hash
 
 def sendSignal():
-    os.kill(os.getpid(), signal.SIGQUIT)
+    os.kill(os.getpid(), signal.SIGINT)
 
 def compare(newStr, oldStr, passwd):
     if newStr == bytes(oldStr.encode()):
-        sendSignal()
         print("****** Found it!!!!! ****** The password is ", passwd)
         with open("result.txt", "w") as f:
             BUF = "Password: " + passwd + "\n"
             f.write(BUF)
+        sendSignal()
         return True
 
     return False
