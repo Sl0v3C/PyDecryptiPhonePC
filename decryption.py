@@ -15,6 +15,8 @@ def findPasswd(hashStr, saltStr):
     signal.signal(signal.SIGTERM, signalHandler)
     signal.signal(signal.SIGINT, signalHandler)
     signal.signal(signal.SIGQUIT, signalHandler)
+    if os.path.exists("result.txt"):
+        os.remove("result.txt")
 
     task_list = []
 
@@ -100,6 +102,9 @@ def main():
             return
 
         findPasswd(hashKey, salt)
+        if not quit:
+            print("Sorry, cannot find the password for this hash key and salt!!!")
+            print("Please check the hash key and salt are right or not!")
     else:
         print("Please input the right arguments!!")
         usage()
