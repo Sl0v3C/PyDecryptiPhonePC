@@ -2,7 +2,7 @@
 Decrypt for iPhone Parental-Control password written by Python.
 
 ## Introduction
-One day my best friend asked me to decrypt the password for his iPhone parental-control, which he cannot remember it any longer.  
+One day my brother asked me to decrypt the password for his iPhone parental-control, which he cannot remember it any longer.  
 I just searched the method from internet, and found the website [Recover iOS7+ Restrictions Passcodes](http://ios7hash.derson.us/).  
 This website can help us to decrypt the password of the parental-control for ios 7, 8 and 9.  
 And I decrypted the password for my friend in this website, thanks to the author.  
@@ -45,7 +45,7 @@ When finish the decryption, it will print log as ```****** Found it!!!!! ****** 
 对苹果iPhone访问限制密码进行破解的Python工具。
 
 ## 楔子
-某天我最好的朋友问我有没有办法可以破解他的访问限制密码，因为他忘记自己设置的是多少了。我就在互联网上搜索破解方法，找到了这个网站[Recover iOS7+ Restrictions Passcodes](http://ios7hash.derson.us/)可以破解出IOS7，8和9的访问限制密码。  
+某天我兄弟问我有没有办法可以破解他的访问限制密码，因为他忘记自己设置的是多少了。我就在互联网上搜索破解方法，找到了这个网站[Recover iOS7+ Restrictions Passcodes](http://ios7hash.derson.us/)可以破解出IOS7，8和9的访问限制密码。  
 我通过该网站破解出我朋友的密码，在这里要感谢该网页的作者。  
 访问限制密码是4个数字的组合，区间从0000 ~ 9999，采用pbkdf2 hmac sha1加密。  
 我思考能否通过Python语言实现一套破解的工具，同时采用多线程的方式可以比较快的计算出密码。  
