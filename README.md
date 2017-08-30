@@ -12,20 +12,21 @@ So created the PyDecryptiPhonePC.
 ## Usage
 This tool only need the ```HashKey``` and the ```Salt```, which contains from iPhone backup file ```com.apple.restrictionspassword.plist ```.  
 You will find the hashkey and salt like:  
-<code>
+
+```
 <plist version="1.0"\>  
-<dict\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<key\>RestrictionsPasswordKey</key\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<data\>  
-&nbsp;&nbsp;&nbsp;&nbsp;**axo6VEI3Tn2ekTeLxA8KBBmH7CA=**  
-&nbsp;&nbsp;&nbsp;&nbsp;</data\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<key\>RestrictionsPasswordSalt</key\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<data\>  
-&nbsp;&nbsp;&nbsp;&nbsp;**GuCyTQ==**  
-&nbsp;&nbsp;&nbsp;&nbsp;</data\>  
+<dict\>  
+    <key\>RestrictionsPasswordKey</key\>  
+    <data\>  
+    axo6VEI3Tn2ekTeLxA8KBBmH7CA= 
+    </data\>  
+    <key\>RestrictionsPasswordSalt</key\>  
+    <data\>  
+    GuCyTQ==
+    </data\>  
 </dict\>  
 </plist\>   
-</code>
+```
 You should copy the ```axo6VEI3Tn2ekTeLxA8KBBmH7CA=``` and ```GuCyTQ==```.  
 ### Windows version
 Just install the tool and modify the run.bat, add hashKey & salt into it.  
@@ -53,20 +54,20 @@ When finish the decryption, it will print log as ```****** Found it!!!!! ****** 
 
 ## 使用方法
 本工具只需要传入```HashKey```和```Salt```，而这两个值是从需要破解的手机备份文件里提取出来的，通过在文件```com.apple.restrictionspassword.plist ```里查找如下的内容：  
-<code>
+```
 <plist version="1.0"\>  
-<dict\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<key\>RestrictionsPasswordKey</key\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<data\>  
-&nbsp;&nbsp;&nbsp;&nbsp;**axo6VEI3Tn2ekTeLxA8KBBmH7CA=**  
-&nbsp;&nbsp;&nbsp;&nbsp;</data\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<key\>RestrictionsPasswordSalt</key\>  
-&nbsp;&nbsp;&nbsp;&nbsp;<data\>  
-&nbsp;&nbsp;&nbsp;&nbsp;**GuCyTQ==**  
-&nbsp;&nbsp;&nbsp;&nbsp;</data\>  
+<dict\>  
+    <key\>RestrictionsPasswordKey</key\>  
+    <data\>  
+    axo6VEI3Tn2ekTeLxA8KBBmH7CA= 
+    </data\>  
+    <key\>RestrictionsPasswordSalt</key\>  
+    <data\>  
+    GuCyTQ==
+    </data\>  
 </dict\>  
 </plist\>   
-</code>
+```
 将如上例中的```axo6VEI3Tn2ekTeLxA8KBBmH7CA=```和```GuCyTQ==```保存下来。（上述只是例子，每个人的这两个值应该都不一样）  
 ### Windows运行版本
 安装releases里针对32位或64位的安装包，并修改工具目录里的run.bat,将保存的两个值添加如下：```decryption.exe "axo6VEI3Tn2ekTeLxA8KBBmH7CA=" "GuCyTQ=="```  
