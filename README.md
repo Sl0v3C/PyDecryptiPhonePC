@@ -70,7 +70,8 @@ When finish the decryption, it will print log as ```****** Found it!!!!! ****** 
 ```
 将如上例中的```axo6VEI3Tn2ekTeLxA8KBBmH7CA=```和```GuCyTQ==```保存下来。（上述只是例子，每个人的这两个值应该都不一样）  
 ### Windows运行版本
-安装releases里针对32位或64位的安装包，并修改工具目录里的run.bat,将保存的两个值添加如下：```decryption.exe "axo6VEI3Tn2ekTeLxA8KBBmH7CA=" "GuCyTQ=="```  
+安装releases里针对32位或64位的安装包，并修改工具目录里的run.bat,将保存的两个值添加如下：  
+```decryption.exe "axo6VEI3Tn2ekTeLxA8KBBmH7CA=" "GuCyTQ=="```  
 修改好之后就直接执行run.bat即可。 
 
 ### Linux运行版本
